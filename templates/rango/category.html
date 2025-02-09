@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 
 <html>
-
     <head>
         <title>Rango</title>
     </head>
 
     <body>
         <div>
-        {% if category %}
+        {% if category %}    
             <h1>{{ category.name }}</h1>
             {% if pages %}
             <ul>
@@ -20,9 +19,10 @@
             <strong>No pages currently in category.</strong>
             {% endif %}
         {% else %}
-            The specified category does not exist.
+             The specified category does not exist.
         {% endif %}
         </div>
+        <a href="/rango/">Index</a><br />
     </body>
-    
+
 </html>
